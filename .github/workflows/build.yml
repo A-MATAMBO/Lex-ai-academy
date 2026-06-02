@@ -12,6 +12,7 @@ jobs:
           node-version: '18'
       - run: npm ci
       - run: npm run build
+      - run: npx cap add android
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
