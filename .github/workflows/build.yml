@@ -20,6 +20,8 @@ jobs:
       
       - run: npx cap init --web-dir=dist -y || true
       
+      - run: npm install @capacitor/android @capacitor/core  # THIS LINE ADDED
+      
       - run: npx cap add android --force
       
       - uses: actions/setup-java@v4
